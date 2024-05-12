@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="odl-sfc-shell">
+    <repository>mvn:org.opendaylight.controller/odl-mdsal-broker/1.6.0/xml/features</repository>
+    <feature name="odl-sfc-shell" description="ODL :: sfc :: odl-sfc-shell" version="0.6.0">
+        <details>OpenDaylight is leading the transformation to Open Software Defined Networking (SDN). For more information, please see https://www.opendaylight.org</details>
+        <feature version="1.6.0" prerequisite="false" dependency="false">odl-mdsal-broker</feature>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:org.opendaylight.sfc/sfc-shell/0.6.0</bundle>
+        <bundle>mvn:org.opendaylight.sfc/sfc-provider/0.6.0</bundle>
+        <bundle>mvn:org.opendaylight.sfc/sfc-model/0.6.0</bundle>
+        <bundle>mvn:org.opendaylight.ovsdb/southbound-api/1.5.0</bundle>
+        <bundle>wrap:mvn:javax.inject/javax.inject/1</bundle>
+    </feature>
+</features>

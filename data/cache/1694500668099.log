@@ -1,0 +1,50 @@
+!SESSION 2023-09-12 12:07:48.145 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_382
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+
+!ENTRY org.eclipse.osgi 4 0 2023-09-12 12:07:48.161
+!MESSAGE error loading hook: org.eclipse.virgo.kernel.equinox.extensions.hooks.ExtensionsHookConfigurator
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.virgo.kernel.equinox.extensions.hooks.ExtensionsHookConfigurator
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.eclipse.osgi.internal.hookregistry.HookRegistry.loadConfigurators(HookRegistry.java:185)
+	at org.eclipse.osgi.internal.hookregistry.HookRegistry.initialize(HookRegistry.java:106)
+	at org.eclipse.osgi.internal.framework.EquinoxContainer.<init>(EquinoxContainer.java:73)
+	at org.eclipse.osgi.launch.Equinox.<init>(Equinox.java:31)
+	at org.eclipse.osgi.launch.EquinoxFactory.newFramework(EquinoxFactory.java:24)
+	at org.apache.karaf.main.Main.launch(Main.java:255)
+	at org.apache.karaf.main.Main.main(Main.java:177)
+
+!ENTRY org.opendaylight.controller.blueprint 4 0 2023-09-12 12:48:19.735
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalArgumentException: Comparison method violates its general contract!
+	at java.util.TimSort.mergeLo(TimSort.java:777)
+	at java.util.TimSort.mergeAt(TimSort.java:514)
+	at java.util.TimSort.mergeCollapse(TimSort.java:441)
+	at java.util.TimSort.sort(TimSort.java:245)
+	at java.util.Arrays.sort(Arrays.java:1512)
+	at java.util.ArrayList.sort(ArrayList.java:1464)
+	at java.util.Collections.sort(Collections.java:177)
+	at org.opendaylight.controller.blueprint.BlueprintBundleTracker.getBundlesToDestroy(BlueprintBundleTracker.java:312)
+	at org.opendaylight.controller.blueprint.BlueprintBundleTracker.shutdownAllContainers(BlueprintBundleTracker.java:279)
+	at org.opendaylight.controller.blueprint.BlueprintBundleTracker.bundleChanged(BlueprintBundleTracker.java:182)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:902)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:165)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:75)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:67)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:102)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:466)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:624)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
+	at java.lang.Thread.run(Thread.java:750)

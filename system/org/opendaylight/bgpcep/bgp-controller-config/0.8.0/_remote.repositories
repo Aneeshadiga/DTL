@@ -1,0 +1,7 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Sep 19 20:09:20 UTC 2017
+bgp-controller-config-0.8.0-bgp-initial-config.xml>=
+bgp-controller-config-0.8.0-network-topology-initial-config.xml>=
+bgp-controller-config-0.8.0-config.xml>=
+bgp-controller-config-0.8.0-bmp-config.xml>=
+bgp-controller-config-0.8.0-bmp-config-example.xml>=

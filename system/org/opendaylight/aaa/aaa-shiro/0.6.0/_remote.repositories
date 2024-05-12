@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Sep 19 20:09:20 UTC 2017
+aaa-shiro-0.6.0-aaa-app-config.xml>=
+aaa-shiro-0.6.0-convert-shiro-ini.py>=
+aaa-shiro-0.6.0.jar>=
+aaa-shiro-0.6.0-config.cfg>=

@@ -1,0 +1,9 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Sep 19 20:09:21 UTC 2017
+sal-clustering-config-1.6.0-moduleshardconf.xml>=
+sal-clustering-config-1.6.0-entityownershipconfig.xml>=
+sal-clustering-config-1.6.0-datastore.cfg>=
+sal-clustering-config-1.6.0-config.xml>=
+sal-clustering-config-1.6.0-moduleconf.xml>=
+sal-clustering-config-1.6.0-akkaconf.xml>=
+sal-clustering-config-1.6.0-factoryakkaconf.xml>=
